@@ -5,9 +5,6 @@
 body{
   font-family: "Work Sans", sans-serif;
 }
-ul{
-  list-style: none;
-}
 .container{
   width: 600px;
   margin-left: auto;
@@ -77,3 +74,48 @@ header .links .icon span:nth-child(2){
 header .links .icon span:last-child{
   width: 100%;
 }
+
+header .links ul{
+  list-style: none;
+  margin: 0;
+  padding:0;
+  background-color: #f6f6f6;
+  position: absolute;
+  right: 0;
+  min-width: 200px;
+  top: calc(100% + 15px); 
+  display: none;
+}
+header .links:hover ul {
+  display: block;
+}
+header .links ul::before{
+  content: "";
+  position: absolute;
+  border-width: 10px;
+  border-style: solid;
+  border-color:transparent transparent #f6f6f6 transparent;
+  right: 5px;
+  top: -20px; 
+}
+
+header .links ul li a{
+  padding: 15px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+header .links ul li a:hover{
+  padding-left: 25px;
+}
+
+header .links li:not(:last-child) a {
+border-bottom: 1px solid #ddd;
+}
+
