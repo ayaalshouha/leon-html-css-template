@@ -5,3 +5,11 @@
 body{
   font-family: "Work Sans", sans-serif;
 }
+
+.container{
+  width: 600px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #eee;
+}
