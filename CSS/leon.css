@@ -37,6 +37,22 @@ body{
   }
 }
 
+.special-heading{
+  color: #ebeced;
+  font-size: 100px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -3px;
+  text-align: center;
+}
+
+.special-heading + p {
+  font-size: 20px;
+  text-align: center;
+  color: #797979;
+  margin: -30px 0 0;
+}
+
 header{
   padding: 20px;
 }
@@ -190,21 +206,6 @@ border-bottom: 1px solid #ddd;
   line-height: 1.8;
 }
 
-.special-heading{
-  color: #ebeced;
-  font-size: 100px;
-  font-weight: 800;
-  margin: 0;
-  letter-spacing: -3px;
-  text-align: center;
-}
-
-.special-heading + p {
-  font-size: 20px;
-  text-align: center;
-  color: #797979;
-  margin: -30px 0 0;
-}
 
 @media (max-width: 767px) {
   .special-heading {
@@ -225,6 +226,13 @@ border-bottom: 1px solid #ddd;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 100px;
+}
+
+@media(max-width: 767px){
+  .services .services-content{
+    gap: 0;
+    margin-top: 70px;
+  }
 }
 
 .services .services-content .serv {
