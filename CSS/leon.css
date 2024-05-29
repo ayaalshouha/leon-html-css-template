@@ -4,7 +4,6 @@
 
 body{
   font-family: "Work Sans", sans-serif;
-  height: 2000px;
 }
 
 :root{
@@ -179,13 +178,15 @@ border-bottom: 1px solid #ddd;
 .features, 
 .portfolio, 
 .services,
-.about{
+.about,
+.contact{
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
 }
 
 .features, 
-.portfolio{
+.portfolio,
+.contact{
   background-color: var(--section-background);
 }
 
@@ -328,6 +329,7 @@ border-bottom: 1px solid #ddd;
   justify-content: space-between;
   gap: 100px;
   margin-top: 100px;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 990px){
@@ -394,4 +396,45 @@ hr{
   display: inline-block;
   width: 50%;
   border-color: var(--main-color);
+}
+
+.contact{
+  text-align: center;
+}
+
+.contact .info{
+  margin-top: 100px;
+}
+
+.contact .info .label{
+  font-size: 35px;
+  font-weight: 800;
+  color: var(--secondary-color);
+  letter-spacing: -2px;
+  margin-bottom: 15px;
+}
+.contact .info .link{
+  font-size: 35px;
+    font-weight: 800;
+    color: var(--main-color);
+    text-decoration: none;
+}
+.contact .info .social-accounts{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 16px;
+  gap: 8px;
+}
+
+footer{
+  background-color: var(--secondary-color);
+  text-align: center;
+  color: white;
+  font-weight: 18px;
+  padding: 30px 10px;
+}
+footer span{
+  color: var(--main-color);
+  font-weight: bold;
 }
