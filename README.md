@@ -10,5 +10,6 @@ HTML/CSS template
  - CSS positions properties
  - psuedo classes
  - etc.
-   ### Libraries used:
-   - Font Awesome Library
+### Libraries used:
+   - Font Awesome Free v5.15.3
+   - Normalize.css v8.0.1
