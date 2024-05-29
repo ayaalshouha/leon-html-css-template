@@ -21,6 +21,7 @@ body{
   padding-left: 15px;
   padding-right: 15px;
 }
+
 @media (min-width: 768px){
   .container{
     width: 750px;
@@ -161,7 +162,7 @@ border-bottom: 1px solid #ddd;
 
 .features{
   padding-top:var(--section-padding);
-  padding-bottom: var(--secondary-color);
+  padding-bottom: var(--section-padding);
   background-color: var(--section-background);
 }
 
@@ -179,6 +180,7 @@ border-bottom: 1px solid #ddd;
 .features .container .feat i {
   color: var(--main-color);
 }
+
 .features .container .feat h3 {
   font-weight: 800;
   margin: 30px 0;
@@ -187,5 +189,73 @@ border-bottom: 1px solid #ddd;
 .features .container .feat p {
   color: #777;
   font-size: 17px;
-  line-height: 1.5;
+  line-height: 1.8;
 }
+
+.special-heading{
+  color: #ebeced;
+  font-size: 100px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -3px;
+  text-align: center;
+}
+
+.special-heading + p {
+  font-size: 20px;
+  text-align: center;
+  color: #797979;
+  margin: -30px 0 0;
+}
+
+@media (max-width: 767px) {
+  .special-heading {
+    font-size: 60px;
+  }
+  .special-heading + p {
+    margin-top: -20px;
+  }
+}
+
+.services{
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.services .services-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 100px;
+}
+
+.services .services-content .serv {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px)
+{
+  .services .services-content .serv {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.services .services-content i{
+  color: var(--main-color);
+  flex-basis: 60px;
+}
+.services .services-content .serv .text{
+  flex:1;
+}
+.services .services-content .serv .text h3{
+  margin:0 0 20px 0;
+}
+.services .services-content .serv .text p{
+  color: #444;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+
