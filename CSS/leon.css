@@ -258,4 +258,28 @@ border-bottom: 1px solid #ddd;
   line-height: 1.6;
 }
 
+.services .services-content .col .image-column{
+  text-align: center;
+  position: relative;
+}
 
+.services .services-content img{
+  width: 260px;
+}
+
+.services .services-content .image-column::before{
+  content: "";
+  position: absolute;
+  background-color: var(--secondary-color);
+  height: calc(100% + 100px);
+  width: 100px;
+  top: -50px;
+  right: 0;
+  z-index: -1;
+}
+
+ @media (max-width: 1199px){
+  .image-column{
+    display: none;
+  }
+} 
