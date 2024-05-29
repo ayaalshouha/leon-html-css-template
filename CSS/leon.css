@@ -210,7 +210,7 @@ border-bottom: 1px solid #ddd;
 
 @media (max-width: 767px) {
   .special-heading {
-    font-size: 60px;
+    font-size: 80px;
   }
   .special-heading + p {
     margin-top: -20px;
