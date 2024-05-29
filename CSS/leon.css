@@ -11,6 +11,8 @@ body{
   --main-color: #10cab7;
   --secondary-color: #2c4755;
   --section-background: #f6f6f6;
+  --section-padding: 60px;
+
 }
 .container{
   width: 600px;
@@ -157,4 +159,33 @@ border-bottom: 1px solid #ddd;
   line-height: 1.8;
 }
 
+.features{
+  padding-top:var(--section-padding);
+  padding-bottom: var(--secondary-color);
+  background-color: var(--section-background);
+}
 
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.features .container .feat {
+  text-align: center;
+  padding: 20px;
+}
+
+.features .container .feat i {
+  color: var(--main-color);
+}
+.features .container .feat h3 {
+  font-weight: 800;
+  margin: 30px 0;
+
+}
+.features .container .feat p {
+  color: #777;
+  font-size: 17px;
+  line-height: 1.5;
+}
