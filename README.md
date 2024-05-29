@@ -1,5 +1,5 @@
-# html-css-template-1
-html css template
+# LEON-html-css-template
+HTML/CSS template
 
  ### Properties used: 
  - Variables
