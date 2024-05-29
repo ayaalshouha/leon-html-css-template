@@ -11,5 +11,5 @@ HTML/CSS template
  - psuedo classes
  - etc.
 ### Libraries used:
-   - Font Awesome Free v5.15.3
-   - Normalize.css v8.0.1
+   - Font Awesome Free 
+   - Normalize.css
