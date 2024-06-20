@@ -12,7 +12,7 @@ body{
   --section-background: #f6f6f6;
   --section-padding: 60px;
   --paragraph-color: #777; 
-  --transition-duration: var(--transition-duration);
+  --transition-duration: 0.3s;
 }
 html{
   scroll-behavior: smooth;
